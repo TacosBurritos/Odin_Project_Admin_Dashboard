@@ -5,58 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
     <div class="header">
-        <div>
-            <input type="search" id="user-search" />
+        <div class="search-top">
+            <div>
+                <img class="magnifying" src="icons/magnify.svg" alt="magnifying glass">
+            </div>
+            <div>
+                <input type="search" id="user-search" />
+                <!-- insert search icon somehow -->
+            </div>
+            <div>
+                <!-- alert icon -->
+                <a href="#"><img src="icons/bell-outline.svg" alt="bell"></a>
+            </div>
+            <div>
+                <img class="user-image" src="profilePics/ahmed-zayan-URaZrRvKQqM-unsplash.jpg" alt="user image">  
+            </div>
+            <div>
+                <p>User Name</p>
+            </div>
         </div>
-        <div>
-            <!-- alert icon -->
-            <i class=""></i>
-        </div>
-        <div class="user-image">
-            <img src="" alt="user image">
-        </div>
-        <div>
-            <p>User Name</p>
+        <div class="nav">
+            <div >
+                <img class="user-image" src="profilePics/ahmed-zayan-URaZrRvKQqM-unsplash.jpg" alt="user image">
+            </div>
+            <div class="name-message">
+                <p>Hi there,</p>
+                <p>User Name</p>
+            </div>
+            <div>
+                <button type="submit">New</button>
+                <button type="submit">Upload</button>
+                <button type="submit">Share</button>
+            </div>
         </div>
     </div>
-    <div class="nav">
-        <div class="user-image">
-            <img src="" alt="user image">
-        </div>
-        <div>
-            <button type="submit">New</button>
-            <button type="submit">Upload</button>
-            <button type="submit">Share</button>
-        </div>
-    </div>
+
     <div class="sidebar">
         <div class="mainIcon">
-            <img src="" alt="Dashboard Icon">
+            <img src="icons/fishbowl.svg" alt="Dashboard Icon">
             <p>Dashboard</p>
         </div>
         <div class="first-list">
             <ul>
-                <li><a href="#"><i></i>Home</a></li>
-                <li><a href="#"><i></i>Profile</a></li>
-                <li><a href="#"><i></i>Messages</a></li>
-                <li><a href="#"><i></i>History</a></li>
-                <li><a href="#"><i></i>Tasks</a></li>
-                <li><a href="#"><i></i>Communities</a></li>
+                <li><a href="#"><img src="icons/home.svg" alt="">  Home</a></li>
+                <li><a href="#"><img src="icons/account.svg" alt="">  Profile</a></li>
+                <li><a href="#"><img src="icons/message.svg" alt="">  Messages</a></li>
+                <li><a href="#"><img src="icons/history.svg" alt="">  History</a></li>
+                <li><a href="#"><img src="icons/calendar-check.svg" alt="">  Tasks</a></li>
+                <li><a href="#"><img src="icons/account-group.svg" alt="">  Communities</a></li>
             </ul>
         </div>
         <div class="second-list">
             <ul>
-                <li><a href="#"><i></i>Settings</a></li>
-                <li><a href="#"><i></i>Support</a></li>
-                <li><a href="#"><i></i>Privacy</a></li>
+                <li><a href="#"><img src="icons/cog.svg" alt="">Settings</a></li>
+                <li><a href="#"><img src="icons/chat-question.svg" alt="">Support</a></li>
+                <li><a href="#"><img src="icons/shield-check.svg" alt="">Privacy</a></li>
             </ul>
         </div>
     </div>
-    <div class="mainSection">
+    <div class="main-section">
         <div class="your-projects">
             <div class="section-title">
                 <p>Your Projects</p>
@@ -106,22 +119,28 @@
             </div>
             <div class="actual-annoucements">
                 <div class="point">
-                    <p class="project-title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    <a href="">
+                        <p class="project-title">Article Title</p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...
+                    </a>
                 </div>
                 <div class="point">
-                    <p class="project-title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    <a href="">
+                        <p class="project-title">Article Title</p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...
+                    </a>
                 </div>
                 <div class="point">
-                    <p class="project-title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    <a href="">
+                        <p class="project-title">Article Title</p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...
+                    </a>
                 </div>
             </div>
         </div>
@@ -130,10 +149,14 @@
                 <p>Trending</p>
             </div>
             <div class="actual-trending">
-                
+                <a href="">@User Name</a>
+                <a href="">@User Name</a>
+                <a href="">@User Name</a>
+                <a href="">@User Name</a>
             </div>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

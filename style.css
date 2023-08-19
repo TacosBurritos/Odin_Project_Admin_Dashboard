@@ -18,24 +18,39 @@ body{
     display: grid;
     grid-template-columns: 1fr 10fr 1fr 1fr 2fr; /*only the green section*/
     background-color: lightgreen;
+    align-items: center;
 }
 .magnifying{
     width: 50%;
+    padding-left: 30%;
 }
 .user-image{
-    width: 80%;
-    height: 20%;
-    border-radius: 100%;
+    width: 50px; /*must find a way to make the picture size dynamic*/
+    height: 50px;
+    border-radius: 50%;
+    margin: 3%;
 }
+
 #user-search{
     width: 70%;
     height: 20%;
     border-radius: 6px;
 }
+img[alt="bell"]{
+    width: 100%;
+}
 .nav {
     display: grid;
     grid-template-columns: 1fr 4fr 3fr;
     background-color: lightsalmon;
+    align-items: center;
+}
+button{
+    background-color: aqua;
+    border-radius: 5%;
+    border:none;
+    width: 20%;
+    padding: 5%;
 }
 
 
@@ -83,19 +98,30 @@ a > img{
     grid-template-columns: 3fr 1fr; 
     /* edit grid-template-columns to make mobile first development  */
 }
-
+.main-section-title{
+    padding-left: 5%;
+}
 .your-projects{
     grid-column: 1/2;
     display: grid;
+    grid-template-rows: 1fr max(4fr, 80%);
+    align-items: center;
 }
 .project-cards{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    
+    justify-items: center;
+    row-gap: 20%;
+    column-gap: 2%;
 }
 .card{
     border: 1px solid black;
-    width: 45%;
+    width: 80%;
     height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding: 5%;
 }
 
 .announcements{
@@ -103,6 +129,27 @@ a > img{
     background-color: lightgrey;
     border: solid lightgray 2px;
     border-radius: 4px;
+}
+.actual-announcements{
+    
+}
+.points{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+.project-title{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+p{
+    margin: 0px;
+}
+div[class="point"]:first-child, div[class="point"]:nth-child(2){
+    border-bottom: gray solid 2px;
 }
 
 .trending{
